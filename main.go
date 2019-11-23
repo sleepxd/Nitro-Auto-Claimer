@@ -5,13 +5,13 @@ import (
 	"os"
 	"os/signal"
 	"syscall"
-  "regexp"
+  	"regexp"
 	"net/http"
 	"io/ioutil"
 	"log"
 	"strings"
 
-  "github.com/gookit/color"
+  	"github.com/gookit/color"
 	"github.com/bwmarrin/discordgo"
 )
 
@@ -63,9 +63,7 @@ func redeem_code(code string) {
 		case 404:
 			color.Danger.Println("Invalid Code: " + code)
 		case 400:
-			color.Danger.Println("Invalid Code: " + code)
-		//case 400:
-			//color.Comment.Println("Code Already Used: " + code)
+			color.Comment.Println("Code Already Used: " + code)
 		}
 }
 
