@@ -30,6 +30,7 @@ func main() {
   if err != nil {
     log.Fatal(err)
   }
+  fmt.Println(id)
   dg, err := discordgo.New(Token)
 	_, err = dg.User("@me")
 	if err != nil {
